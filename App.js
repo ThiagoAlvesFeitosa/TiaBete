@@ -89,9 +89,9 @@ function HomeScreen({ navigation }) {
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
         <TouchableOpacity
           style={{ marginTop: 20 }}
-          onPress={() => navigation.navigate('HomeDetail')}
+          onPress={() => navigation.navigate('GraficoScreen')}
         >
-          <Text>Go home Detail</Text>
+          <Text>Grafico</Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={{ marginTop: 20 }}
@@ -228,7 +228,17 @@ function LoginScreen({ navigation }) {
         navigation={navigation}
       />
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text>Tela de Login!</Text>
+        <View
+          style={{
+            alignItems: 'center',
+            justifyContent: 'center'
+          }}
+        >
+          <Image
+            source={require('./assets/user.png')}
+            style={{ height: 120, width: 120, borderRadius: 60 }}
+          />
+        </View>
         <TouchableOpacity
           style={{ marginTop: 20 }}
           onPress={() => navigation.navigate('HomeApp')}
